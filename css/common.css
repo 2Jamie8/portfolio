@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('font/Pretendard-1.3.6/web/static/woff2/Pretendard-Regular.woff2') format('woff2'), url('font/Pretendard-1.3.6/web/static/woff/Pretendard-Regular.woff') format('woff');
+}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+body {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-size: 16px;
+	color: #333;
+	line-height: 1;
+	overflow-x: hidden;
+}
+h3 {
+	font-size: 60px;
+	margin-bottom: 100px;
+	position: relative;
+	font-weight: 900;
+}
+.click_bg {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100vh;
+	background-color: #00000090;
+	z-index: 9;
+	display: none;
+}
+.click_bg.on {
+	display: block;
+}
