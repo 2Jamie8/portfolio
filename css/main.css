@@ -666,6 +666,7 @@ main .cont04 h3::before {
     }
 }
 footer {
+    dispaly: none;
     height: 200px;
     padding-top: 65px;
     font-size: 20px;
