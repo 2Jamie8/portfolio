@@ -182,12 +182,25 @@ main .main_visual figure div h2 strong {
         width: 400px; height: 60px;
     }
 }
+@media screen and (max-width: 400px) {
+    main .main_visual figure div img {
+        width: 300px; height: 50px;
+    }
+    main .main_visual figure div h2 {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 360px) {
+    header .inner h1 {
+        display: none;
+    }
+}
 main .cont01 {
     max-width: 1440px;
     width: calc(100% - 40px);
     margin: 0 auto;
     padding: 200px 0;
-    transform: translateX(120%);
+    /* transform: translateX(120%); */
 }
 main .cont01.on {
     transform: translateX(0);
@@ -302,11 +315,21 @@ main .cont01 .inner .list .button a:first-child button {
         left: 229px;
     }
 }
+@media screen and (max-width: 426px) {
+    h3 {
+        font-size: 30px;
+    }
+    main .cont01 h3::before {
+        left: 170px;
+        width: 10px;
+        height: 10px;
+    }
+}
 main .cont02 {
     background-color: #6E85B7;
     color: #fff;
     padding: 200px 0;
-    transform: translateX(-120%);
+    /* transform: translateX(-120%); */
 }
 main .cont02.on {
     transform: translateX(0);
@@ -451,12 +474,19 @@ main .cont02 h3::before {
         margin: 20px 0 10px;
     }
 }
+@media screen and (max-width: 426px) {
+    main .cont02 h3::before {
+        left: 165px;
+        width: 10px;
+        height: 10px;
+    }
+}
 main .cont03  {
     max-width: 1440px;
     margin: 0 auto;
     padding: 200px 20px;
     position: relative;
-    transform: translateX(120%);
+    /* transform: translateX(120%); */
 }
 main .cont03.on {
     transform: translateX(0);
@@ -552,13 +582,25 @@ main .cont03 .swiper-button-prev {
     main .cont03 .swiper-button-prev {
         left: 73%;
     }
+}
+@media screen and (max-width: 426px) {
+    main .cont03 h3::before {
+        left: 150px;
+        width: 10px;
+        height: 10px;
+    }
+} 
+@media screen and (max-width: 376px) {
+    main .cont03 .swiper-button-prev {
+        left: 68%;
+    }
 } 
 
 main .cont04 {
     background-color: #6E85B7;
     padding: 200px 0;
     color: #fff;
-    transform: translateX(-120%);
+    /* transform: translateX(-120%); */
 }
 main .cont04.on {
     transform: translateX(0);
@@ -605,7 +647,7 @@ main .cont04 .inner .list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 main .cont04 .inner .list02 {
     justify-content: flex-start;
@@ -673,11 +715,6 @@ main .cont04 h3::before {
         transform: translateX(0);
     }
 }
-@media screen and (max-width: 1200px) {
-    main .cont04 .inner .list .cont04item {
-        height: 350px;
-    }
-}
 @media screen and (max-width: 860px) {
     main .cont04 {
         padding: 150px 0;
@@ -685,19 +722,13 @@ main .cont04 h3::before {
     main .cont04 h3::before {
         left: 222px;
     }
-    main .cont04 .inner .list .cont04item {
-        height: 270px;
+    main .cont04 .inner .list .cont05item {
+        height: 400px;
     }
 }
 @media screen and (max-width: 767px) {
-    main .cont04 .inner .list .cont04item {
-        height: 250px;
-    }
 }
 @media screen and (max-width: 650px)  {
-    main .cont04 .inner .list .cont04item {
-        height: 200px;
-    }
     main .cont04figure {
         width: 350px;
     }
@@ -705,10 +736,6 @@ main .cont04 h3::before {
 @media screen and (max-width: 620px) {
     main .cont04 h3::before {
         left: 181px;
-    }
-    main .cont04 .inner .list .cont04item {
-        width: calc(100% / 4 - 5px);
-        height: 150px;
     }
 }
 @media screen and (max-width: 540px) {
@@ -718,6 +745,31 @@ main .cont04 h3::before {
     main .cont04figure .imgclose {
         width: 50px;
         top: -50px; right: -50px;
+    }
+    main .cont04 .inner .list .cont05item {
+        height: 200px;
+    } 
+    main .cont05figure {
+        height: 55%;
+    }   
+}
+@media screen and (max-width: 426px) {
+    main .cont04 .inner .list02 {
+        justify-content: space-between;
+    }
+    main .cont04 .inner .list .cont04item {
+        width: calc(100% / 2.1);
+        margin-right: 0;
+    }
+    main .cont04 .inner .list .cont05item {
+        width: calc(100% / 2.1); 
+        height: auto;
+        margin-right: 0;
+    }
+    main .cont04 h3::before {
+        left: 135px;
+        width: 10px;
+        height: 10px;
     }
 }
 footer {
