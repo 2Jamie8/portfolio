@@ -122,6 +122,7 @@ $(function(){
         if($('.click_bg').css('display') == 'block'){
             $(this).removeClass('on')
             cont04ImgFigure.hide()
+            cont05ImgFigure.hide()
         }
         hd.css({
             'display' : 'block'
@@ -130,6 +131,43 @@ $(function(){
     cont04ImgFigure.click(function(){
         $('.click_bg').removeClass('on')
         cont04ImgFigure.hide()
+        hd.css({
+            'display' : 'block'
+        })
+    })
+    let cont05ImgFigure = $('.cont05figure');
+    let cont05Img = $('.cont05img');
+    let cont05Item = $('.cont05item')
+    cont05Item.click(function(){
+        let thisImg = $(this).find('img').attr('src');
+        cont05ImgFigure.show();
+        bodyBg.addClass('on');
+        cont05Img.attr('src', thisImg);
+        hd.css({
+            'display' : 'none'
+        })
+    })
+    cont05Item.click(function(){
+        let thisImg = $(this).find('img').attr('src');
+        cont05ImgFigure.show();
+        bodyBg.addClass('on');
+        cont05Img.attr('src', thisImg);
+        hd.css({
+            'display' : 'none'
+        })
+    })
+    /* $('.click_bg').click(function(){
+        if($('.click_bg').css('display') == 'block'){
+            $(this).removeClass('on')
+            cont05ImgFigure.hide()
+        }
+        hd.css({
+            'display' : 'block'
+        })
+    }) */
+    cont05ImgFigure.click(function(){
+        $('.click_bg').removeClass('on')
+        cont05ImgFigure.hide()
         hd.css({
             'display' : 'block'
         })
